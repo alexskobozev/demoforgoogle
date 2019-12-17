@@ -54,12 +54,14 @@
             android:id="@+id/rbt_news_feed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:text="@string/news_feed" />
 
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/rbt_chat_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:text="@string/chat_list" />
 
     </RadioGroup>
@@ -105,6 +107,7 @@
             android:id="@+id/rbt_cards"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:text="@string/carousel" />
 
     </RadioGroup>

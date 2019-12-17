@@ -189,8 +189,9 @@ class NativeHelper(val parent: View) : NativeAd.NativeAdListener {
                     }
                 }
                 ad.registerView(it)
-                val text = "Aspect: ${holder.adView?.findViewById<MediaAdView>(
-                        R.id.nativeads_media_view)?.mediaAspectRatio?.toString() ?: "No aspect"}"
+                val findViewById = holder.adView?.findViewById<View>(R.id.nativeads_media_view)
+                val mediaAdView = findViewById as? MediaAdView
+                val text = "Aspect: ${mediaAdView?.mediaAspectRatio?.toString() ?: "No aspect"}"
                 holder.aspectView?.text = text
 
             }
